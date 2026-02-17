@@ -1,6 +1,15 @@
 node-xml2js
 ===========
 
+> **⚠️ LTS Security Fork** — This is a community-maintained fork by [Brickhouse Tech](https://github.com/brickhouse-tech) providing security patches for `xml2js`. The upstream repository is inactive with unpatched CVEs affecting 29M+ weekly downloads.
+>
+> **Patches included:**
+> - ✅ CVE-2023-0842 — Prototype pollution via parsed XML (fixed in upstream 0.6.2, regression tests added here)
+>
+> **Support this work:** [GitHub Sponsors](https://github.com/sponsors/brickhouse-tech)
+
+---
+
 Ever had the urge to parse XML? And wanted to access the data in some sane,
 easy way? Don't want to compile a C parser, for whatever reason? Then xml2js is
 what you're looking for!

@@ -6,7 +6,7 @@
     "json"
   ],
   "homepage": "https://github.com/Leonidas-from-XIV/node-xml2js",
-  "version": "0.6.2",
+  "version": "0.6.3-lts.0",
   "author": "Marek Kubica <marek@xivilization.net> (https://xivilization.net)",
   "contributors": [
     "maqr <maqr.lollerskates@gmail.com> (https://github.com/maqr)",
@@ -66,23 +66,27 @@
   "scripts": {
     "build": "cake build",
     "test": "zap",
+    "lint": "eslint .",
     "coverage": "nyc npm test && nyc report",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "doc": "cake doc"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Leonidas-from-XIV/node-xml2js.git"
+    "url": "https://github.com/brickhouse-tech/node-xml2js.git"
   },
   "dependencies": {
     "sax": ">=0.6.0",
     "xmlbuilder": "~11.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "coffee-script": "^1.12.7",
     "coffeescript": ">=1.10.0 <2",
     "coveralls": "^3.0.1",
     "diff": ">=1.0.8",
     "docco": ">=0.6.2",
+    "eslint": "^10.0.0",
     "nyc": ">=2.2.1",
     "zap": ">=0.2.9 <1"
   },
