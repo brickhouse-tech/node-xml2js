@@ -1,9 +1,21 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## 0.6.3 (2026-02-28)
+
+
+### Features
+
+* LTS security fork with CVE-2023-0842 regression tests ([ebc2881](https://github.com/brickhouse-tech/node-xml2js/commit/ebc2881ebe68b454d544945f71d9f4b90098997a))
+* modernize xml2js fork ([1fdecc4](https://github.com/brickhouse-tech/node-xml2js/commit/1fdecc48ac66f963836717b4e9e9ad73db71ffd7))
+
+
+### Bug Fixes
+
+* explicitly ignore vulnerable properties ([d486007](https://github.com/brickhouse-tech/node-xml2js/commit/d486007a688bf10fa5a2ae72eed1e29b4b01a76a))
+* include missed key check ([7292aa9](https://github.com/brickhouse-tech/node-xml2js/commit/7292aa92d901fc18468cb04100f8e2b1c49c412e))
+* revert incorrectly adapted code ([4c8ec89](https://github.com/brickhouse-tech/node-xml2js/commit/4c8ec89859ac14a6c5d31adccfb4747ba074112b))
 
 ## [0.6.3-lts.0] - 2026-02-28
 
