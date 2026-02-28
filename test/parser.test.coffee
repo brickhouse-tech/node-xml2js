@@ -647,3 +647,29 @@ module.exports =
     .catch (err) ->
       assert.notEqual err, null
       test.finish()
+
+  'test CVE-2023-0842 __proto__ prototype pollution': (test) ->
+    xml = '<root><__proto__><polluted>yes</polluted></__proto__></root>'
+    xml2js.parseString xml, (err, result) ->
+      assert.equal err, null
+      # The key should be stored as a regular property, not pollute Object prototype
+      obj = {}
+      assert.equal obj.polluted, undefined, 'Object prototype should not be polluted via __proto__'
+      assert.ok result.root.hasOwnProperty('__proto__'), '__proto__ should exist as own property'
+      test.finish()
+
+  'test CVE-2023-0842 constructor prototype pollution': (test) ->
+    xml = '<root><constructor><prototype><polluted>yes</polluted></prototype></constructor></root>'
+    xml2js.parseString xml, (err, result) ->
+      assert.equal err, null
+      obj = {}
+      assert.equal obj.polluted, undefined, 'Object prototype should not be polluted via constructor.prototype'
+      test.finish()
+
+  'test CVE-2023-0842 __proto__ with attributes': (test) ->
+    xml = '<root><__proto__ type="attack"><injected>yes</injected></__proto__></root>'
+    xml2js.parseString xml, (err, result) ->
+      assert.equal err, null
+      obj = {}
+      assert.equal obj.injected, undefined, 'Object prototype should not be polluted via __proto__ with attributes'
+      test.finish()
