@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.0](https://github.com/brickhouse-tech/node-xml2js/compare/v1.0.0...v1.1.0) (2026-03-02)
+
+
+### Features
+
+* convert to ESM JavaScript ([8043570](https://github.com/brickhouse-tech/node-xml2js/commit/8043570e67b2149e5e54579e017205dd42d4040d))
+
 ## [1.0.0](https://github.com/brickhouse-tech/node-xml2js/compare/v0.6.3...v1.0.0) (2026-02-28)
 
 ## 0.6.3 (2026-02-28)
