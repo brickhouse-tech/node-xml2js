@@ -25,4 +25,4 @@ jobs:
           npm install -g npm@11
           npm ci
           npm audit --audit-level=high
-          npm publish --access public --provenance
+          npm publish --access public
