@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.1](https://github.com/brickhouse-tech/node-xml2js/compare/v1.1.0...v1.1.1) (2026-03-02)
+
+
+### Bug Fixes
+
+* resolve CVE warnings and clean up publish workflow ([4bcf5e8](https://github.com/brickhouse-tech/node-xml2js/commit/4bcf5e8bfd817b0971d3e622d8f5faf50e1e0e35))
+
 ## [1.1.0](https://github.com/brickhouse-tech/node-xml2js/compare/v1.0.0...v1.1.0) (2026-03-02)
 
 
