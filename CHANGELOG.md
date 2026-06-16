@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.10](https://github.com/brickhouse-tech/node-xml2js/compare/v1.1.9...v1.1.10) (2026-06-16)
+
 ## [1.1.9](https://github.com/brickhouse-tech/node-xml2js/compare/v1.1.8...v1.1.9) (2026-05-12)
 
 ## [1.1.8](https://github.com/brickhouse-tech/node-xml2js/compare/v1.1.7...v1.1.8) (2026-04-04)
